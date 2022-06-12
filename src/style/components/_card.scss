@@ -1,0 +1,39 @@
+.card{
+    height:100px;
+    margin:1em;
+    position:relative;
+    text-align: center;
+    transition:0.3s;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+    img{
+    object-fit: cover;
+    height: 100px;
+    width:160px;
+}
+}
+
+.infos-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:0;
+    height:100%;
+    opacity: 0;
+    transition: 0.2s;
+    width: 160px;
+    &:hover{
+        background-color:rgba(0,0,0,0.6);
+        color:white;
+        opacity: 1;
+        ul{
+            transform: scale(1);
+            li{
+                margin:5px;
+            }
+        }
+    }
+}

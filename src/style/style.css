@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+body li {
+  list-style: none;
+}
+
+body a {
+  text-decoration: none;
+}
+
+.card {
+  height: 100px;
+  margin: 1em;
+  position: relative;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100px;
+  width: 160px;
+}
+
+.infos-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  width: 160px;
+}
+
+.infos-container:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 1;
+}
+
+.infos-container:hover ul {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.infos-container:hover ul li {
+  margin: 5px;
+}
+
+.countries-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1 {
+  margin: 1em;
+  text-align: center;
+}
+
+hr {
+  margin: 0 0 2em 0;
+}
+/*# sourceMappingURL=style.css.map */
